@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br/><br/><br/><br/>
+
+<div align="center">
+    <h1 sytle = "color: #1a1a1a" id = "quote"></h1>
+</div>
+
+<script>
+var quoteArray = [
+    "An Apple A Day Keeps the Dr. Away",
+    "You Reap What you Sew",
+    "Be Yourself",
+    "Never Look a Gift Horse in the Mouth",
+    "Rome wasn't built in a day",
+    "What goes around comes around",
+    "Every Rose has it's thorn",
+    "The Grass is always greener on the other side",
+    "There is never enough time",
+    "Every Road Leads to Rome",
+    "Life happens when you are busy making other plans",
+    "You only live once but do it right, once is enough",
+    "The way to get started is to quit talking and start doing",
+    "Your time is limited, so don't waste it living someone elses life",
+    "You cant shake hands with a clenched fist",
+    "It is better to be loved than feared, if you can't have both",
+    "There is no charm equal to tenderness of the heart",
+    "All that we see or seem is but a dream within a dream",
+    "Learning never exhausts the mind",
+    "Independence is happiness"
+]
+
+    var randomNumber = Math.floor((Math.random()*20) + 1)
+    document.getElementById('quote').innerHTML = quoteArray[randomNumber - 1]
+</script>
+
+</body>
+</html>
